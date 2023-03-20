@@ -1,0 +1,16 @@
+version: "2"
+services:
+  pyweb:
+    container_name: pyweb
+    image: dvin/pyweb:1.0.1
+#    network_mode: "host"
+    ports:
+      - "8000:8000"
+#    entrypoint:
+#          - sh
+#          - -c
+#          - "while [ 1 ]; do echo . ; sleep 5; done"
+#    logging:
+#       driver: json-file
+#       options:
+#        max-size: 1m
